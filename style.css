@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    height: 100vh;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* variable */
+:root{
+    --navbar-background-color:#e5383b;
+    --navbar-item-color:#f5f3f4;
+    --black-color:#000;
+    --welcome-background:#242423;
+    --projects-background:#778da9;
+    --code-color:#e85d04;
+}
+/* navbar style */
+#navbar{
+    background-color: var(--navbar-background-color);
+    font-size: 2rem;
+    height: auto;
+    border-bottom: 2px solid var(--black-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 6rem;
+}
+.navlink:link,
+.navlink:visited{
+    text-decoration: none;
+    color: var(--navbar-item-color);
+    font-weight: 700;
+    padding: 0 4rem;
+}
+.navitem{
+    list-style: none;
+}
+
+/* Welcome section */
+#welcome-section{
+    height: 100vh;
+    background-color: var(--welcome-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.primary-header{
+    font-size: 6rem;
+    color: var(--navbar-item-color);
+}
+.sub-header{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--navbar-background-color);
+}
+
+/* projects section */
+#projects{
+    background-color:var(--projects-background);
+    height:100%;
+
+}
+.project-header{
+    font-size: 5rem;
+    color: var(--navbar-item-color);
+    padding-top: 8rem;
+    border-bottom: 2px solid var(--navbar-item-color);
+    width: 45%;
+    margin: 0 auto;
+}
+.card-box{
+    width: 100%;
+    height: auto;
+    padding: 5rem 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.card-item{
+    width: 32rem;
+    height: 35rem;
+    background-color: var(--welcome-background);
+    margin:2rem;
+
+
+}
+
+.card-link:link,
+.card-link:visited{
+    text-decoration: none;
+    color: var(--navbar-item-color);
+    font-size: 2rem;
+    text-align: center;
+}
+.project-image{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.project-title{
+    padding: 1rem 0;
+    background-color: var(--welcome-background);
+}
+.code{
+    color: var(--welcome-background);
+    transition: color 0.5s ease-out;
+}
+.card-item:hover .code{
+    color: var(--code-color);
+}
