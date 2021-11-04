@@ -104,8 +104,8 @@ body{
 
 }
 
-.card-link:link,
-.card-link:visited{
+#profile-link:link,
+#profile-link:visited{
     text-decoration: none;
     color: var(--navbar-item-color);
     font-size: 2rem;
@@ -116,7 +116,7 @@ body{
     height: 80%;
     object-fit: cover;
 }
-.project-title{
+.project-tile{
     padding: 1rem 0;
     background-color: var(--welcome-background);
 }
@@ -127,3 +127,61 @@ body{
 .card-item:hover .code{
     color: var(--code-color);
 }
+
+/* contact section */
+#contact{
+    background-color: var(--welcome-background);
+    height: 50vh;
+    text-align: center;
+    padding: 5rem 0;
+
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    text-transform: capitalize;
+}
+.contact-info > * {
+    margin: 0 2rem;
+}
+.paragraph{
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--navbar-item-color);
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    color: var(--navbar-item-color);
+    /* box-shadow: 0 .5rem 1rem var(--black-color); */
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+
+
+
+}
+.name{
+    color: var(--navbar-item-color);
+    font-size: 2.7rem;
+    padding: 0 1rem;
+    text-shadow:3px 3px 1px #000000;
+}
+
+.contact-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-link:link,
+.contact-link:visited{
+    text-decoration: none;
+    color: var(--navbar-item-color);
+}
+.fa-at{
+    width: 3.2rem;
+}
+.fa-mobile-screen-button{
+    width: 2.5rem;
+}
+
